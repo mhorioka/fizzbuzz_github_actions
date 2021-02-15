@@ -1,7 +1,7 @@
 const fizbuzz = require("../index");
 
 describe("fizbuzz", () => {
-    it("returns FizzBuzz when value is devisible by 15", () => {
+    it("returns FizzBuzz when value is divisible by 15", () => {
         expect(fizbuzz(30)).toStrictEqual("FizzBuzz");
     });
 
