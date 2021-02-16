@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Get NPM cache directory
       id: npm-cache
-      run: echo "::set-output name=dir::$(npm cofig get cache)"
+      run: echo "::set-output name=dir::$(npm config get cache)"
     - name: Cache NPM
       uses: actions/cache@v2
       with:
