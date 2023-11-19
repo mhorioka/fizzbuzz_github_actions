@@ -36,6 +36,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
+      - name: Get NPM cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
       - name: Cache NPM
         uses: actions/cache@v2.0.0
         with:
