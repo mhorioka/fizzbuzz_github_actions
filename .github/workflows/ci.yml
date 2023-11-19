@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
-      - name: Setup Node.js 12.x
-        uses: actions/setup-node@v1.3.0
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 14
       - name: Install dependencies
         run: npm ci
       - name: Test
@@ -21,10 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
-      - name: Setup Node.js 12.x
-        uses: actions/setup-node@v1.3.0
+      - name: Setup Node.js 14
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 14
       - name: Install dependencies
         run: npm ci
       - name: Lint
