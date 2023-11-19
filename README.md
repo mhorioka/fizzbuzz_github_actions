@@ -1,0 +1,1 @@
+[![Continuous Integration](https://github.com/mhorioka/fizzbuzz_github_actions/actions/workflows/ci.yml/badge.svg)](https://github.com/mhorioka/fizzbuzz_github_actions/actions/workflows/ci.yml)
